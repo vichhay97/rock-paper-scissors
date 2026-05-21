@@ -3,10 +3,17 @@ function getComputerChoice() {
 
     switch (val) {
         case 1:
-            return "Rock";
+            return "rock";
         case 2:
-            return "Paper";
+            return "paper";
         case 3:
-            return "Scissors";
+            return "scissors";
     }
 }
+
+function getHumanChoice() {
+    const userInput = window.prompt("Pick Rock, Paper or Scissors!");
+
+    return userInput.trim().toLowerCase();
+}
+
